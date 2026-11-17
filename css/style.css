@@ -245,3 +245,37 @@ footer {
         flex-direction: column;
     }
 }
+/* Impression PDF (Bonus CV) */
+@media print {
+    .navbar, footer {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+        display: block;
+    }
+
+    main {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .card {
+        border: 1px solid #ccc;
+        box-shadow: none;
+        break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+
+    .img-fluid {
+        max-height: 150px;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 85%;
+    }
+}
