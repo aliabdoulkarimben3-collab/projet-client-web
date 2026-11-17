@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo Cyclisme - Ali Abdoulkarim Ben</title>
+    <link rel="icon" type="image/jpeg" href="../images/logo_akba12.jpeg">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="nav-brand" href="../index.html">Ali A. Ben</a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="parcours.html">Mon Parcours</a></li>
+                <li><a href="centre_interet.html">Centres d'intérêt</a></li>
+                <li><a class="active" href="dynamique.html">Météo Cyclisme</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="single-col-grid" style="max-width: 800px; margin: 0 auto;">
+            <section class="card text-center">
+                <h1>Prévisions Météo pour mes sorties à vélo</h1>
+                <h2 style="color: #334155; font-size: 1.2rem;">Météo en temps réel sur Toulouse</h2>
+                
+                <img src="../images/METEO.jpeg" alt="Ciel toulousain" class="img-fluid" style="max-height: 300px; margin: 1rem auto;">
+                
+                <p>Cette page a pour but de vérifier rapidement si les conditions climatiques sont favorables pour aller rouler le long du Canal du Midi.</p>
+                
+                <details open style="background-color: #e0f2fe; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; text-align: left;">
+                    <summary style="font-weight: bold; cursor: pointer;">Widget Météo (Bientôt disponible)</summary>
+                    <div id="donnees-meteo" style="margin-top: 10px;">
+                        <p><em>Les données de température, de vent et de précipitations apparaîtront ici dynamiquement lors de l'Étape 3 du projet, grâce à l'intégration de JavaScript.</em></p>
+                    </div>
+                </details>
+                
+                <p>Données météorologiques fournies par : <a href="https://open-meteo.com/" target="_blank">L'API publique Open-Meteo</a>.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <strong>Ali Abdoulkarim Ben</strong><br>
+                <small>© 2026 Projet Client Web UT2J</small>
+            </div>
+            <ul class="footer-links">
+                <li><a href="https://github.com/aliabdoulkarimben3-collab" target="_blank">Profil GitHub</a></li>
+                <li><a href="https://www.komoot.com/user/5021729855793" target="_blank">Profil Komoot</a></li>
+                <li><a href="https://www.univ-tlse2.fr/" target="_blank">UT2J</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
